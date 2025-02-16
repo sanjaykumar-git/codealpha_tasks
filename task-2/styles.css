@@ -1,0 +1,51 @@
+/* Background Animation */
+.animated-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.9) 100%);
+  animation: floatBackground 10s infinite alternate ease-in-out;
+}
+
+@keyframes floatBackground {
+  0% { transform: translateY(-20px) rotate(0deg); }
+  50% { transform: translateY(20px) rotate(2deg); }
+  100% { transform: translateY(-20px) rotate(-2deg); }
+}
+
+/* To-Do List Container */
+.bg-gray-900 {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+/* Button Hover Effects */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Checkbox styling */
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #facc15; /* Yellow accent */
+}
+
+/* Animation for checked tasks */
+.task-checkbox:checked + .task-text {
+  color: #9ca3af; /* Gray */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Smooth delete animation */
+.delete-btn {
+  transition: transform 0.2s ease-in-out;
+}
+.delete-btn:hover {
+  transform: scale(1.2);
+}

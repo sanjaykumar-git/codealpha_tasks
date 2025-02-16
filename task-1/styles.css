@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #facc15; /* Yellow Background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Label */
+label {
+  display: block;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Field */
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #fbbf24;
+  background-color: #fde68a;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Button */
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* Styling for Age Result */
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#result .year {
+  color: #6b21a8; 
+  font-weight: bold;
+}
+
+#result .month {
+  color: #15803d; 
+  font-weight: bold;
+}
+
+#result .day {
+  color: #dc2626; 
+  font-weight: bold;
+}
